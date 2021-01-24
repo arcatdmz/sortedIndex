@@ -1,0 +1,9 @@
+
+# source code
+lib/
+.github/
+tsconfig.json
+rollup.config.js
+
+# website
+docs/
