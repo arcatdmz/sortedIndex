@@ -1,6 +1,6 @@
 {
   "name": "sortedindex",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple npm package that provides a binary search function for a sorted array",
   "main": "dist/index.js",
   "browser": "dist/index.js",
