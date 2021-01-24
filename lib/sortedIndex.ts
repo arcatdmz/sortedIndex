@@ -17,7 +17,7 @@ export function sortedIndex<T>(
     high = array.length;
   while (low < high) {
     const mid = (low + high) >>> 1;
-    if (accessor(array[mid]) < value) low = mid + 1;
+    if ((accessor ? accessor(array[mid]) : array[mid]) < value) low = mid + 1;
     else high = mid;
   }
   return low;
