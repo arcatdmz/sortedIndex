@@ -2,7 +2,9 @@
 # source code
 lib/
 .github/
+__tests__/
 tsconfig.json
+jest.config.js
 rollup.config.js
 
 # website
