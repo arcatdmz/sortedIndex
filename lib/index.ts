@@ -1,2 +1,1 @@
-
 export { sortedIndex } from "./sortedIndex";
