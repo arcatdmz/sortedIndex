@@ -23,6 +23,8 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
     - run: npm ci --no-optional
+    - name: Run tests
+      run: npm run test
     - name: Build package
       run: npm run build
     - name: Publish package
