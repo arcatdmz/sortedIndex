@@ -7,9 +7,9 @@
 
 **sortedindex** は二分探索を行う関数が入った npm パッケージです。
 
+- GitHub repository: https://github.com/arcatdmz/sortedIndex
 - npm package: https://www.npmjs.com/package/sortedindex
-- API document: https://arcatdmz.github.io/sortedIndex/
-
+- API document: https://arcatdmz.github.io/sortedIndex
 
 ### Usage / 使い方
 
@@ -20,15 +20,14 @@ npm install sortedindex
 ```typescript
 import { sortedIndex } from "sortedindex";
 
-const i1 = sortedIndex([1,2,4,5], 3);
-const i2 = sortedIndex(["a", "b", "c", "e"], "d", (o) => o.charCodeAt(0));
+const i1 = sortedIndex([1, 2, 4, 5], 3); // 2
+const i2 = sortedIndex(["a", "b", "d", "e"], "c", (o) => o.charCodeAt(0)); // 2
 ```
-
 
 ### Credits / 開発者
 
 - [Jun Kato](https://junkato.jp)
 
-
 ---
+
 Copyright (c) 2021 Jun Kato
