@@ -20,7 +20,7 @@ npm install sortedindex
 ```typescript
 import { sortedIndex } from "sortedindex";
 
-const i1 = sortedIndex([1,2,4,5], 3)
+const i1 = sortedIndex([1,2,4,5], 3);
 const i2 = sortedIndex(["a", "b", "c", "e"], "d", (o) => o.charCodeAt(0));
 ```
 
