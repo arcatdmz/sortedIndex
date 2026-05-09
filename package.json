@@ -43,18 +43,5 @@
     "ts-jest": "^29.4.9",
     "typedoc": "^0.28.19",
     "typescript": "^5.9.3"
-  },
-  "ava": {
-    "typescript": {
-      "extensions": [
-        "ts"
-      ],
-      "require": [
-        "ts-node/register"
-      ],
-      "rewritePaths": {
-        "src/": "build/"
-      }
-    }
   }
 }
