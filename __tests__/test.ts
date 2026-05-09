@@ -22,7 +22,7 @@ describe("sortedIndex tests", () => {
     expect(sortedIndex([3], 4)).toEqual(1);
   });
 
-  test("duplicate values are inserted at first matching index", () => {
+  test("duplicate values find the leftmost insertion point", () => {
     expect(sortedIndex([1, 2, 2, 2, 3], 2)).toEqual(1);
     expect(sortedIndex([1, 1, 1], 1)).toEqual(0);
   });
