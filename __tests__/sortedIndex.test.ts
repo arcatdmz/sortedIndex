@@ -2,6 +2,7 @@
  * # Tests for sortedindex package
  */
 
+import { describe, expect, test } from "vitest";
 import { sortedIndex } from "../lib/";
 
 describe("sortedIndex tests", () => {

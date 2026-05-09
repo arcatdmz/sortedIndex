@@ -1,8 +1,12 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "declaration": true,
-      "allowUmdGlobalAccess": true
-    },
-    "include": ["./lib/**/*.ts"]
-  }
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "rootDir": "lib",
+    "declaration": true,
+    "declarationDir": "dist",
+    "strict": true
+  },
+  "include": ["./lib/**/*.ts"]
+}

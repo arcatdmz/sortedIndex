@@ -13,18 +13,18 @@ export function sortedIndex(array: readonly number[], obj: number): number;
 export function sortedIndex<T>(
   array: readonly T[],
   obj: T,
-  accessor: (obj: T) => number
+  accessor: (obj: T) => number,
 ): number;
 /** Generic array with accessor and direct numeric target value */
 export function sortedIndex<T>(
   array: readonly T[],
   obj: number,
-  accessor: (obj: T) => number
+  accessor: (obj: T) => number,
 ): number;
 export function sortedIndex<T>(
   array: readonly T[],
   obj: T | number,
-  accessor?: (obj: T) => number
+  accessor?: (obj: T) => number,
 ): number {
   const value = !accessor || typeof obj === "number" ? obj : accessor(obj);
   let low = 0,
