@@ -1,6 +1,5 @@
 ### sortedindex
 
-[![test](https://github.com/arcatdmz/sortedIndex/actions/workflows/test.yml/badge.svg)](https://github.com/arcatdmz/sortedIndex/actions/workflows/test.yml)
 [![npm version](https://img.shields.io/npm/v/sortedindex)](https://www.npmjs.com/package/sortedindex)
 [![license](https://img.shields.io/npm/l/sortedindex)](LICENSE)
 
