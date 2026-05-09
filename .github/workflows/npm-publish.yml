@@ -2,7 +2,7 @@ name: npm-publish
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 permissions:
   contents: read
 jobs:
@@ -10,20 +10,20 @@ jobs:
     name: npm-publish
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20.x'
-        registry-url: https://registry.npmjs.org/
-        cache: npm
-    - run: npm ci --omit=optional
-    - name: Run tests
-      run: npm run test
-    - name: Build package
-      run: npm run build
-    - name: Publish package
-      run: npm publish --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.x"
+          registry-url: https://registry.npmjs.org/
+          cache: npm
+      - run: npm ci --omit=optional
+      - name: Run tests
+        run: npm run test
+      - name: Build package
+        run: npm run build
+      - name: Publish package
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
