@@ -7,8 +7,22 @@
  * @returns オブジェクトを挿入すべき位置のインデックス / An appropriate index value in the sorted array to insert the object
  * @public
  */
+/** Numeric array without accessor */
+export function sortedIndex(array: readonly number[], obj: number): number;
+/** Generic array with accessor and object-like target */
 export function sortedIndex<T>(
-  array: T[],
+  array: readonly T[],
+  obj: T,
+  accessor: (obj: T) => number
+): number;
+/** Generic array with accessor and direct numeric target value */
+export function sortedIndex<T>(
+  array: readonly T[],
+  obj: number,
+  accessor: (obj: T) => number
+): number;
+export function sortedIndex<T>(
+  array: readonly T[],
   obj: T | number,
   accessor?: (obj: T) => number
 ): number {
