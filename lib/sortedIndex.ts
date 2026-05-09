@@ -7,8 +7,19 @@
  * @returns オブジェクトを挿入すべき位置のインデックス / An appropriate index value in the sorted array to insert the object
  * @public
  */
+export function sortedIndex(array: readonly number[], obj: number): number;
 export function sortedIndex<T>(
-  array: T[],
+  array: readonly T[],
+  obj: T,
+  accessor: (obj: T) => number
+): number;
+export function sortedIndex<T>(
+  array: readonly T[],
+  obj: number,
+  accessor: (obj: T) => number
+): number;
+export function sortedIndex<T>(
+  array: readonly T[],
   obj: T | number,
   accessor?: (obj: T) => number
 ): number {
